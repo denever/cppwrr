@@ -29,10 +29,11 @@ int main()
 	*w = rnd.integer(1, 9);
 	cout  << "La coda ha peso " << *w << endl;
     }
-    
-    // Realizza il WRR
+
+    double min_weight = numeric_limits<double>::max();    
+
+// Realizza il WRR
     typedef vector<double>::const_iterator cwit;
-    double min_weight = numeric_limits<double>::max();
    
     for(cwit it=weight.begin(); it != weight.end(); it++)
 	if(*it < min_weight)
